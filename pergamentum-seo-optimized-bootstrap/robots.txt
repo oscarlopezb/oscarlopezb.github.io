@@ -1,0 +1,3 @@
+# robots.txt generado por toolseo.net
+User-agent: *
+Disallow: /aviso-legal.html

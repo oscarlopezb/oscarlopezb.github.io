@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="superior">
+            <img src="img/logo.png" class="logo" width="100%">
+            <div id="toggle-menu" class="toggle-menu"><img src="img/iconomenu.png" alt="" width="20em"></div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="actual"><a href="#">INICIO</a></li>
+                <li><a href="#">QUÉ ES</a></li>
+                <li><a class="herramientas" href="#">HERRAMIENTAS</a></li>
+                <li><a class="responsive" href="#">RESPONSIVE</a></li>
+                <li><a class="media" href="#">MEDIA QUERIES</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    
+    <main>
+
+        <article class="slider">
+
+            <picture>
+                <source srcset="img/desktop.png" media="(min-width: 1200px)" class="desktop">
+                <source srcset="img/tablet.png" media="(min-width: 600px)" class="tablet">
+                <img class="foto" src="img/movil.png" alt="Web Responsive">
+            </picture>
+
+            <div>
+                <h1><span>TODO SOBRE</span> <br> DISEÑO RESPONSIVE</h1>
+                <h2>DA FORMA A TUS DISEÑOS <br> Y CONOCE LAS HERRAMIENTAS
+                </h2>
+            </div>
+
+        </article>
+
+
+
+        <section class="tipos">
+
+            <article>
+
+                <div>
+                    <svg viewBox="0 0 212 212" id="bombilla">
+                        <use href="sprites/iconos.svg#bombilla">
+                    </svg>
+                    <h1>Lo importante es el contenido</h1>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere architecto veritatis similique
+                    tempore, aliquid dicta. Ex laudantium sapiente maiores rerum quas iusto tempora inventore,
+                    cumque ipsam animi eaque velit hic ea sunt mollitia, porro illum similique? Dolor impedit, atque
+                    minima ut quasi maiores placeat in laboriosam quas dolorum aliquid ea necessitatibus id itaque,
+                    mollitia excepturi cum numquam! Rerum, magnam amet.</p>
+                <a href="#">SABER MÁS</a>
+
+            </article>
+
+
+            <article>
+
+                <div>
+                    <svg viewBox="0 0 212 212" id="lupa">
+                        <use href="sprites/iconos.svg#lupa">
+                    </svg>
+                    <h1>Es, sobre todo, <br> un concepto</h1>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere architecto veritatis similique
+                    tempore, aliquid dicta. Ex laudantium sapiente maiores rerum quas iusto tempora inventore,
+                    cumque ipsam animi eaque velit hic ea sunt mollitia, porro illum similique? Dolor impedit, atque
+                    minima ut quasi maiores placeat in laboriosam quas dolorum aliquid ea necessitatibus id itaque,
+                    mollitia excepturi cum numquam! Rerum, magnam amet.</p>
+                <a href="#">SABER MÁS</a>
+
+            </article>
+
+
+            <article>
+
+                <div>
+                    <svg viewBox="0 0 212 212" id="tuerca">
+                        <use href="sprites/iconos.svg#tuerca">
+                    </svg>
+                    <h1>Herramientas <br> de edición</h1>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere architecto veritatis similique
+                    tempore, aliquid dicta. Ex laudantium sapiente maiores rerum quas iusto tempora inventore,
+                    cumque ipsam animi eaque velit hic ea sunt mollitia, porro illum similique? Dolor impedit, atque
+                    minima ut quasi maiores placeat in laboriosam quas dolorum aliquid ea necessitatibus id itaque,
+                    mollitia excepturi cum numquam! Rerum, magnam amet.</p>
+                <a href="#">SABER MÁS</a>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>2020 · DISEÑO WEB RESPONSIVE</p>
+
+    </footer>
+
+
+
+    <script>
+
+        document.getElementById('toggle-menu').addEventListener('click', function () {
+            var b = document.body;
+            b.classList.toggle('translate');
+            b.classList.add('hidden');
+            b.addEventListener('transitionend', function (e) {
+                if (!b.classList.contains('translate')) b.removeAttribute('class');
+            });
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

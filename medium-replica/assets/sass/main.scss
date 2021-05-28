@@ -1,0 +1,47 @@
+$corporateColor: rgb(254, 192, 23);
+$base: 8px;
+
+@import "lib/vars";
+@import "lib/mixins";
+@import "lib/reboot";
+@import "lib/fontawesome/font-awesome";
+@import "lib/fontface";
+@import "lib/keyframes";
+@import "partials/header";
+@import "partials/modal";
+@import "partials/post";
+@import "partials/slider";
+@import "partials/trending";
+@import "partials/topics";
+
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    line-height: $base * 3;
+    color: $body_color;
+    min-height: 100vh;
+    min-height: 2000px;
+}
+
+h1 {
+    font-size: $base * 2.3;
+    line-height: $base * 5;
+}
+
+h2 {
+    font-size: $base * 9;
+    line-height: $base * 9;
+    letter-spacing: -0.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: $base * 2.2;
+    line-height: $base * 3;
+}
+
+h4 {
+    font-size: $base * 2;
+}

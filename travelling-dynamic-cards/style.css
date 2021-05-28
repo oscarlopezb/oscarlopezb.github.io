@@ -1,0 +1,204 @@
+@import url("../fonts/stylesheet.css");
+
+/*GENERAL*/
+
+body {
+    font-family: 'd-dinregular';
+    background-color: rgb(226, 201, 161);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+div:hover {
+    cursor: pointer;
+}
+
+.linea{
+    border: rgb(66, 61, 124) 1px solid;
+    height: 180px;
+    margin-top: 24em
+}
+
+/*TARJETA PRINCIPAL----------------*/
+
+.contenedor {
+    display: flex;
+    width: 90em;
+    margin: auto;
+}
+
+.tarjetagrande {
+    margin: 17em 3.5em 0em 3.5em;
+    display: flex;
+    flex: 1;
+    background-color: rgb(252, 239, 214);
+    border-radius: 2.5em;
+    align-items: center;
+    box-shadow: 0px 0px 30px 0px rgba(95, 90, 83, 0.411);
+}
+
+.tarjeta {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 2em;
+    height: 24em;
+    background-color: rgb(252, 239, 214);
+    position: relative;
+    border-radius: 2em;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(168, 132, 84, 0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(168, 132, 84, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(168, 132, 84, 0.5);
+}
+
+svg {
+    width: 7em;
+    padding-top: 2em;
+}
+
+h2 {
+    color: rgb(47, 44, 199);
+    font-size: 1.5em;
+    padding: 1em 0em;
+    border-top: dashed 1.5px;
+}
+
+
+/*ANIMACIONES TARJETA 1-----------------*/
+
+#avion {
+    transition: 1800ms .15s;
+}
+
+.tarjeta:hover #avion {
+    transform: translateX(300%);
+}
+
+.contenido1{
+    transition: ease-in 900ms .2s;
+}
+
+.tarjeta:hover .contenido1{
+    transform: translateY(-200%);
+}
+
+#calcular1{
+    transition: 1200ms cubic-bezier(1,-0.6,.78,1.27);
+}
+
+.tarjeta:hover #calcular1{
+    transform: translateY(300%);
+}
+
+
+/*ANIMACIONES TARJETA 2-----------------*/
+
+#barco {
+    transition: 1300ms cubic-bezier(.90,-0.54,.85,1.42);
+}
+
+.tarjeta:hover #barco {
+    transform: translateX(300%);
+}
+
+.contenido2 h1 {
+	transition: 1000ms .15s cubic-bezier(.90,-0.54,.85,1.42);
+}
+
+.tarjeta:hover .contenido2 h1{
+    transform: translateX(200%);
+}
+
+.contenido2 p {
+	transition: 1300ms cubic-bezier(.60,-0.54,.85,1.42);
+}
+
+.tarjeta:hover .contenido2 p{
+    transform: translateX(200%);
+}
+
+#calcular2{
+    transition: 1700ms .25s cubic-bezier(.31,-0.49,0,.99);
+}
+
+.tarjeta:hover #calcular2{
+    transform: translateX(-300%);
+}
+
+
+
+/*ANIMACIONES TARJETA 3-----------------*/
+
+#montaña {
+    transition: 1100ms .65s
+}
+
+.tarjeta:hover #montaña {
+    transform: translateY(300%);
+}
+
+.contenido3 h1 {
+	transition: 1300ms cubic-bezier(.70,-0.54,.85,1.42);
+}
+
+.tarjeta:hover .contenido3 h1{
+    transform: translateX(-700%);
+} 
+
+.contenido3 p {
+	transition: 1300ms cubic-bezier(.70,-0.54,.85,1.42);
+}
+
+.tarjeta:hover .contenido3 p{
+    transform: translateX(700%);
+} 
+
+#calcular3 {
+    transition: 1000ms .2s cubic-bezier(.70,-0.54,.85,1.42)
+}
+
+.tarjeta:hover #calcular3 {
+    transform: translateY(300%);
+}
+
+
+/*TRANSICION PRECIOS---------------*/
+
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    border-radius: 2em;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(66, 61, 124);
+    opacity: 0;
+    transition: ease-in 250ms .7s;
+}
+
+
+.precios h1 {
+    line-height: 0;
+    color: white;
+    font-family: 'd-dindin-bold';
+    font-size: 4em;
+}
+
+.precios p {
+    padding: 0 2em;
+    color: white;
+    font-size: 1.2em;
+}
+
+.tarjeta:hover .precios {
+    opacity: 1;
+    box-shadow: inset 0px 0px 15px 0px rgb(38, 34, 73);
+}

@@ -1,0 +1,234 @@
+@import url(bootstrap.css);
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #2f2c35 !important; 
+    font-size: .7em;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: .8em;
+}
+
+.dropdown-menu {
+    margin: 0em !important;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+header {
+    background-color: #2f2c35;
+}
+
+header ul{
+    border-radius: .5em;
+    color: white !important;
+}
+
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero img, .hero h1{
+    grid-column: 1;
+    grid-row: 1
+}
+
+.hero h1 {
+    font-size: 1em;
+    font-style: bold;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    margin: auto;
+}
+
+.contactoindex {
+    background-color: rgb(204, 204, 204);
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.contactoindex a{
+    color: #1c1e74 !important
+}
+
+footer {
+    background-color: #2f2c35;
+    color: white;
+    margin-top: auto;
+}
+
+footer p{
+    font-size: .7em;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+    font-size: .7em;
+    color: white;
+}
+
+footer li a{
+    color: white !important
+}
+
+footer li a:hover {
+    color: white !important
+}
+
+.introduccion img{
+    width: 100%;
+}
+.introduccion li {
+    font-size: .8em;
+}
+
+.proyectos img {
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.proyectos article {
+    -webkit-box-shadow: -4px -4px 9px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px -4px 9px -4px rgba(0,0,0,0.75);
+    box-shadow: -4px -4px 9px -4px rgba(0,0,0,0.75);
+    background-color: rgb(231, 231, 231);
+    border-radius: 1em;
+    height: 100%;
+}
+
+.proyectos img {
+    border-bottom: solid 4px #433f81;
+}
+
+.proyectos div{
+    margin: 2em 0;
+}
+
+.proyectos h2{
+    margin-top: 1em;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.proyectos p{
+    padding: 0 2em;
+    margin-bottom: 2em;
+    font-size: .8em;
+    text-align: center;
+}
+
+.pleito h2{
+    font-size: 1em;
+}
+
+.envianos {
+    font-size: 1.2em;
+}
+
+form h2{
+    font-size: .8em;
+}
+
+input {
+    width: 100%;
+}
+
+.mensaje {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.mensaje input {
+    width: 100%;
+    height: 150%;
+    font-size: .8em;
+    margin-top: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 7.8em;
+    border:rgb(214, 214, 214) solid 1px
+}
+
+.campos-1 div{
+    margin: 1em 0
+}
+
+.mapa-sitio h2{
+    font-size: 1em;
+    color: rgb(29, 27, 49)
+}
+
+.error-404 h2 {
+    color: rgb(29, 27, 49)
+}
+
+.mapa-sitio a, .error-404 a, .proyectos a{
+    color: #433f81;
+}
+
+.mapa-sitio a:hover, .error-404 a:hover, .proyectos a:hover{
+    color: #6f5f91;
+}
+
+.error-404 {
+    height: 45em;
+}
+
+@media (min-width: 400px) {
+    .container {
+      max-width: 540px;
+    }
+  
+    .img-pleito img{
+      width: 100%;
+    }
+
+    .proyectos div article {
+        width: 80%;
+        margin: auto;
+    }
+
+    .error{
+        margin: 15em auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .texto-restauracion {
+        margin-top: 0;
+    }
+
+    .proyectos div article {
+        width: 100%;
+        margin: 0;
+    }
+
+    .error{
+        margin: 12em auto;
+    }
+}
+
+@media (min-width: 1200px) {  
+    .pleito h2{
+      font-size: 1.5em;
+  }
+
+  .error{
+    margin: 10em auto;
+}
+}

@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { /* reset */
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+	font-family: sans-serif;
+	line-height: 1.7;
+}
+
+.contenedor {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1200px;	
+	padding: 1em;
+}
+
+/* RETÍCULA GRID */
+
+.fila {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 1em;
+	margin: 1em 0;
+}
+
+.cols, .una-col, .dos-col, .tres-col, .cuatro-col, .cinco-col, .seis-col, .siete-col, .ocho-col, .nueve-col, .diez-col, .once-col, .doce-col {
+
+	margin: 1em 0 !important;
+	padding: .5rem;
+}
+
+.una-col {
+	grid-column-end: span 1;
+}
+.dos-col {
+	grid-column-end: span 2;
+}
+.tres-col {
+	grid-column-end: span 3;
+}
+.cuatro-col {
+	grid-column-end: span 4;
+}
+.cinco-col {
+	grid-column-end: span 5;
+}
+.seis-col {
+	grid-column-end: span 6;
+}				
+.siete-col {
+	grid-column-end: span 7;
+}
+.ocho-col {
+	grid-column-end: span 8;
+}
+.nueve-col {
+	grid-column-end: span 9;
+}
+.diez-col {
+	grid-column-end: span 10;
+}
+.once-col {				
+	grid-column-end: span 11;
+}
+.doce-col {
+	grid-column-end: span 12;
+}
+
+/*------------- LÍNEA COMIENZO DE COLUMNA  ---------------------*/
+
+.linea-2{
+	grid-column-start: 2;
+}
+.linea-3{
+	grid-column-start: 3;
+}
+.linea-4{
+	grid-column-start: 4;
+}
+.linea-5{
+	grid-column-start: 5;
+}
+.linea-6{
+	grid-column-start: 6;
+}
+.linea-7{
+	grid-column-start: 7;
+}
+.linea-8{
+	grid-column-start: 8;
+}
+.linea-9{
+	grid-column-start: 9;
+}
+.linea-10{
+	grid-column-start: 10;
+}
+.linea-11{
+	grid-column-start: 11;
+}
+.linea-12{
+	grid-column-start: 12;
+}
+
+/* AUXILIARES FLEXBOX */
+
+.flexible {
+	display: flex;
+}
+.cols {
+	flex: 1; /* Para columnas del mismo ancho */
+}
+.centrar-h {
+	justify-items: center;
+}
+.arriba {
+	align-items: flex-start;
+}
+.arriba-hijo {
+	align-self: flex-start;
+}
+.centrar-v {
+	align-items: center
+}
+.centrar-v-hijo {
+	align-self: center;
+}
+.abajo {
+	align-items: flex-end
+}
+.abajo-hijo {
+	align-self: flex-end
+}
+.alrededor {
+	justify-content: space-around
+}
+.entre {
+	justify-content: space-between
+}
+.primero {
+	order: -1;
+}
+.ultimo {
+	order: 1;
+}
+.fila-flex-inversa {
+	flex-direction: row-reverse
+}
+.columna-flex {
+	flex-direction: column
+}
+.columna-flex-inversa {
+	flex-direction: column-reverse
+}

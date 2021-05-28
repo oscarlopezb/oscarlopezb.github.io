@@ -1,0 +1,97 @@
+.home_grid {
+    display: flex;
+    justify-content: center;
+    padding: $base * 5 0;
+    border-bottom: solid 1px rgb(218, 218, 218);
+
+    .home_grid_holder {
+        width: 100%;
+        max-width: 1200px;
+
+        .home_grid_header {
+            display: flex;
+            align-items: center;
+            margin-bottom: $base * 1;
+
+            .icon {
+                margin-right: $base;
+            }
+
+            .label {
+                text-transform: uppercase;
+                font-size: .9em;
+                font-weight: bold;
+                color: black;
+            }
+        }
+
+        .home_grid_items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: $base * 3;
+        }
+    }
+}
+
+.home_grid_item {
+    display: flex;
+    font-size: .9rem;
+    line-height: $base * 2;
+
+    &.home_grid_nostar {
+        .star {
+            display: none;
+        }
+    }
+
+    .big_num {
+        margin-right: $base * 2;
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(221, 221, 221);
+    }
+
+    .content {
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: $base * 2;
+
+            .pic {
+                margin-right: $base;
+                background-color: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 1em;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .title {
+            margin-bottom: $base;
+        }
+
+        .meta {
+            display: flex;
+            color: grey;
+
+            .separator {
+                margin: 0 $base;
+                font-size: 0.2em;
+            }
+
+            .star {
+                font-size: .6em;
+                color: grey;
+                margin-left: $base;
+            }
+        }
+    }
+};

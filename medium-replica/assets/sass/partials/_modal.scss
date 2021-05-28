@@ -1,0 +1,104 @@
+.modal_one, .modal_two{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    &.opened {
+        visibility: visible;
+    }
+    
+    .modal_bg, .modal_bg_2 {
+        background-color: rgba(255, 255, 255, 0.918);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .modal_container {
+        width: 40%;
+        max-width: 800px;
+        height: 70%;
+        background-color: #fff;
+        border-radius: .4em;
+        box-shadow: 1px -1px 23px -7px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 1px -1px 23px -7px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px -1px 23px -7px rgba(0, 0, 0, 0.3);
+
+        .cruz{
+            text-align: right;
+            padding: 1em;
+        }
+
+        .modal_content {
+            align-items: center;
+            text-align: center;
+
+            h2 {
+                font-size: 2em;
+                text-align: center;
+            }
+
+            .bookmark_text{
+                width: 40ch;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 2em;
+            }
+
+            .join {
+                a{
+                    color: rgb(70, 70, 70);
+                    align-items: center;
+                    border: solid 1px rgb(177, 177, 177);
+                    border-radius: .3em;
+                    width: 40%;
+                    margin: .7em auto;
+                    padding: .5em 1.5em;
+                    display: flex;
+
+                    .fa{
+                        margin-right: 1em;
+                    }
+                }
+            }
+
+            .sign_in{
+                margin: 2em 0 7em 0;
+
+                a{
+                    font-weight: bold;
+                    color: green;
+                }
+            }
+
+            .sign_in_2{
+                margin: 2em 0 4em 0;
+
+                a{
+                    font-weight: bold;
+                    color: green;
+                }
+            }
+
+            .terms{
+                color: grey;
+                width: 50ch;
+                text-align: center;
+                margin: 0 auto;
+                font-size: .8em;
+                line-height: 1.5em;
+
+                a {
+                    text-decoration: underline;
+                    color: grey;
+                }
+            }
+        }
+    }
+};

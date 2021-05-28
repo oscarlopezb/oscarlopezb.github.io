@@ -1,0 +1,221 @@
+body{
+    margin: 0em;
+    padding: 0em;
+    font-family: sans-serif;
+    line-height: 1.4em;
+}
+
+
+/******CABECERA******/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 9em;
+}
+
+header nav a {
+    color: rgb(85, 94, 219);
+    font-size: 1.2em;
+    margin: 1em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.logotipo {
+    margin: 1em
+}
+
+.icono {
+    width: 2.3em;
+    position: relative;
+    margin-right: .2em;
+    fill: currentColor;
+    top: .9em;
+}
+
+#shakes:hover{
+    color: rgb(255, 51, 0);
+}
+
+#burgers:hover{
+    color: rgb(255, 174, 0)
+}
+
+#pastries:hover{
+    color: rgb(44, 171, 194)
+}
+
+#cookies:hover{
+    color: rgb(0, 194, 113)
+}
+
+
+
+/******INTRO******/
+
+article>div{
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.intro{
+    padding: 4em;
+    background-color: rgb(85, 94, 219);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1{
+    color: rgb(23, 21, 39);
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.intro h2{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+input {
+    margin-top: 3em;
+}
+
+
+
+
+/*****¿QUÉ ENCONTRARÁS?*****/
+
+#tipos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.tipos{
+    display: grid;
+    grid-template-areas: "icono titulo" "icono explicacion";
+    grid-template-rows: .8fr 4fr;
+}
+
+.iconos{
+    grid-area: icono;
+}
+
+.iconos{
+    margin-right: 1em;
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.apartados h1{
+    margin-top: 1.8em;
+    margin-bottom: 1.2em;
+    font-size: 1.7em;
+}
+
+.apartados h2{
+    font-size: 1.2em;
+    margin: 0;   
+    font-weight: bolder;
+}
+
+hr {
+    width: 90em;
+    margin-top: 3em;
+}
+
+
+
+
+/***************FOOTER*****************/
+
+/***SVG SOCIAL MEDIA***/            
+
+.twitter {
+    background-image: url("sprites/socialmedia.svg#twitter"); 
+}
+
+.twitter:hover {
+    background-image: url("sprites/socialmedia.svg#twitter-c");
+}
+
+
+
+.facebook {
+    background-image: url("sprites/socialmedia.svg#facebook");
+}
+
+.facebook:hover {
+    background-image: url("sprites/socialmedia.svg#facebook-c");
+}
+
+
+
+.instagram {
+    background-image: url("sprites/socialmedia.svg#insta");
+}
+
+.instagram:hover {
+    background-image: url("sprites/socialmedia.svg#insta-c");
+}
+
+
+
+.youtube {
+    background-image: url("sprites/socialmedia.svg#youtube");
+}
+
+.youtube:hover {
+    background-image: url("sprites/socialmedia.svg#youtube-c");
+}
+
+/*********************/
+
+
+
+footer{
+    padding: 2em;
+}
+
+footer nav, footer div{
+    display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+footer nav a {
+    display: inline-block;
+    text-indent: -9999px;
+    transition: ease-in-out .5s;
+    height: 3em;
+    width: 3em;
+    margin: 1em;
+}
+
+footer nav a:hover{
+    transform: rotate(13deg);
+}
+
+footer div {
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+footer div a{
+    color: rgb(85, 94, 219);
+    margin: .5em;
+    font-size: 1em;
+}
+
+footer div a:hover {
+    color: rgb(255, 102, 0)
+}
