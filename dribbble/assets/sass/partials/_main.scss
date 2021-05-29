@@ -1,0 +1,304 @@
+$corporateColor: rgb(233, 76, 137);
+$base: 8px;
+
+main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 2em 0;
+
+    .holder {
+        .filter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2em;
+
+            .filter_left {
+                .filter_left_button {
+                    margin-right: 2em;
+                    color:rgb(70, 68, 78);
+                    font-size: .8em;
+                    width: 200px;
+                    padding: $base;
+                    cursor: pointer;
+                }
+
+                .actual {
+                    background-color: $corporateColor;
+                    color: white;
+                    padding: $base;
+                    border-radius: .5em;
+                    width: 100%;
+                }
+            }
+
+            .filter_right{
+                display: flex;
+                align-items: center;
+
+                input { 
+                    display: flex;
+                    text-align: left;
+                    padding: $base $base * 2;
+                    width: 10em;
+                    border: solid 1px $corporateColor;
+                    border-radius: .5em;
+                    transition: 1s;
+                    margin-right: 1em;
+                }
+                
+                input::placeholder {
+                    font-size: .9em;
+                    color: $corporateColor;
+                }
+                
+                input:focus {
+                    width: 15em;
+                }
+
+                .fa-search {
+                    font-size: 1em;
+                    color: $corporateColor;
+                }
+
+                .filter_right_text{
+                    display: flex;
+                    align-items: center;
+                    color: $corporateColor;
+                    font-size: .9em;
+                    border: solid 1px $corporateColor;
+                    margin: 0 $base * 2;
+                    border-radius: .5em;
+                    padding: $base $base * 2;
+                    transition: .4s 50ms ease-in-out;
+                    cursor: pointer;
+
+                    p {
+                        margin-right: .5em;
+                    }
+                }
+                
+                .filter_right_text:hover, a:hover{
+                    background-color: $corporateColor;
+                    transition: .4s 50ms ease-in-out;
+                    color: white !important;
+                }
+            } 
+        }
+
+        .gallery_items {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr 1fr;
+            // grid-gap: $base * 3;
+        
+            .gallery_item {
+                width: 33%;
+                padding: $base * 2;
+
+                &.hidden {
+                    display: none;
+                }
+        
+                .bg {
+                    position: relative;
+                    border-radius: 1em;
+                    color: white;
+        
+                    .gradient {
+                        background: linear-gradient(0deg, rgb(39, 39, 39) 0%, rgba(0,0,0,0.20351890756302526) 22%, rgba(255,255,255,0) 100%);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        border-radius: 1em;
+                    }
+        
+                    img{
+                        width: 100%;
+                        border-radius: 1em;      
+                    }
+        
+                    .content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        padding: 1em;
+            
+                        .author {
+                            display: flex;
+                            align-items: center;
+
+                            a {
+                                color: white;
+                            }
+            
+                            .pic {
+                                margin-right: $base;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 1em;
+                                overflow: hidden;
+                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                            
+                            .name {
+                                margin-right: 1em;
+                                font-size: .9em;
+                            }
+        
+                            .type{
+                                display: flex;
+        
+                                a {
+                                    margin-right: 1em;
+                                    color: rgb(32, 34, 46);
+                                    background-color: rgb(193, 202, 226);
+                                    border-radius: .5em;
+                                    font-size: .6em;
+                                    padding: 0 $base;
+                                }
+
+                                a:hover {
+                                    background-color: $corporateColor;
+                                    transition: .2s 10ms ease-in-out;
+                                    color: white;
+                                }
+
+                                .type_none {
+                                    display: none;
+                                }
+                            }
+                        }
+            
+                        .meta {
+                            display: flex;
+                            align-items: center;
+        
+                            p {
+                                margin: 0;
+                            }
+            
+                            .fa {
+                                margin-right: .5em;
+                            }
+        
+                            .likes {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 1em;
+                                font-size: .8em;
+
+                                a {
+                                    color: white;
+                                }
+                            }
+
+                            .fa-heart:hover {
+                                color: $corporateColor;
+                                transition: .2s 10ms ease-in-out;
+                            }
+        
+                            .views {
+                                display: flex;
+                                align-items: center;
+                                font-size: .8em;
+                            }
+                        }
+                    }
+
+                    .gallery_hover {
+                        background: linear-gradient(180deg, rgb(61, 5, 26) 0%, rgba(255,255,255,0) 100%);
+                        position: absolute;
+                        bottom: 80px;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        display: flex;
+                        border-radius: 1em;
+                        justify-content: space-between;
+                        padding: $base * 3;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .5s 10ms ease-in-out;
+    
+                        .hover_title {
+                            margin-top: .2em;
+                            font-weight: bold;
+                            font-size: .9em;
+                        }
+    
+                        .icons a{
+                            background-color: white;
+                            color: $corporateColor;
+                            padding: $base;
+                            margin-left: 1em;
+                            border-radius: .5em;
+                        }
+    
+                        a:hover {
+                            color: rgb(151, 43, 84);
+                            transition: .2s 10ms ease-in-out;
+                        }
+                    }
+                }
+
+                .bg:hover > .gallery_hover {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: .5s 10ms ease-in-out;
+                }
+
+
+            }
+        }
+        
+        .gallery_sign {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 3em 0 2em 0;
+        
+            .sign{
+                background-color: $corporateColor;
+                color: white;
+                padding: $base $base * 2;
+                font-weight: bold;
+                border-radius: .5em;
+                font-size: .9em;
+                margin: 0 $base * 4;
+                width: 200px;
+                text-align: center;
+            }
+        
+            .sign:hover {
+                background-color: rgb(212, 50, 112);
+                transition: .2s 10ms ease-in-out;
+            }
+        
+            .sign_in {
+                color: $corporateColor;
+                width: 100px;
+                text-align: center;
+            }
+        
+            .sign_in:hover {
+                color: rgb(212, 50, 112);
+            }
+        }
+    }
+}
