@@ -72,7 +72,30 @@ article img:hover {
 	transform: scale(1.04);
 }
 
-@media (min-width: 1000px) {
 
+@media screen and (max-width: 1000px) {
 
+    body {
+        padding: 0 2em;
+    }
+
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0 2em;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    header img {
+        width: 30%;
+        padding: 1em 0;
+    }
 }
